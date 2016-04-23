@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Lock a user interaction so that you can make an async call or multiple sends.",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "redis": "^2.6.0-1",
+    "redlock": "^2.0.0"
+  },
   "scripts": {
     "lint": "jshint index.js"
   },
