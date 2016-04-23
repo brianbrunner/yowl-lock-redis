@@ -1,6 +1,6 @@
 {
   "name": "yowl-lock-redis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lock a user interaction so that you can make an async call or multiple sends.",
   "main": "index.js",
   "dependencies": {
