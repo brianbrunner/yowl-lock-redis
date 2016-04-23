@@ -1,0 +1,33 @@
+{
+  "name": "yowl-lock-redis",
+  "version": "0.1.0",
+  "description": "Lock a user interaction so that you can make an async call or multiple sends.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "lint": "jshint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianbrunner/yowl-lock-redis.git"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Brian Brunner (brian.brunner@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianbrunner/yowl-lock-redis/issues"
+  },
+  "homepage": "https://github.com/brianbrunner/yowl-lock-redis#readme",
+  "devDependencies": {
+    "jshint": "latest",
+    "browserify": "latest",
+    "mocha": "latest"
+  },
+  "jshintConfig": {
+    "node": true,
+    "proto": true
+  }
+}
