@@ -19,7 +19,7 @@ exports = module.exports = function(redis_clients, redlock_options, auto_reply) 
   var redlock = new Redlock(instantiated_clients, redlock_options);
 
   return function(context, event, next) {
-    var lockname = 'platform:' + context._platform.name + '|session:' + context.sessionId;
+    var lockname = 'platform:' + context.platform.name + '|session:' + context.sessionId;
     var ttl = context.lock_ttl || redlock_options.ttl || default_ttl;
 
     redlock.lock(lockname, ttl, function(err, lock) {
