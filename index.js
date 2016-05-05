@@ -27,7 +27,7 @@ exports = module.exports = function(redis_clients, redlock_options, auto_reply) 
         // if we can't acquire the lock...
         if (auto_reply || context.auto_reply) {
           var reply = auto_reply || context.auto_reply;
-          event.send(context, event, reply, function(sendErr) {
+          event.send(reply, function(sendErr) {
             // prioritize reporting a send error reporting a locking error
             if (sendErr) {
               next(sendErr);
